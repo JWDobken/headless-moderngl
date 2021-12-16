@@ -4,12 +4,7 @@ from PIL import Image
 from pyrr import Matrix44
 
 # create context
-ctx = moderngl.create_context(
-    standalone=True,
-    # These are OPTIONAL if you want to load a specific version
-    libgl="libGL.so.1",
-    libx11="libX11.so.6",
-)
+ctx = moderngl.create_context(standalone=True)
 
 prog = ctx.program(
     vertex_shader="""

@@ -35,7 +35,6 @@ nerdctl run -w /src -v "${PWD}"/src:/src --rm -i -t moderngl_obj bash
 and run:
 
 ```
-./init_xvfb.sh
 python render.py
 ```
 
